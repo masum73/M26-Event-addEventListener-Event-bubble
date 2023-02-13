@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h1>Exploring Event Delegate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Quas, culpa pariatur?</li>
+            <li class="item">Suscipit, optio cum?</li>
+            <li class="item">Amet, cumque harum.</li>
+            <li class="item">Fugit, exercitationem. Quo.</li>
+            <li class="item">Optio, odit ea?</li>
+        </ul>
+    </section>
+
+    <script>
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click',function(){
+                console.log(item);
+            })
+        }
+    </script>
+</body>
+</html>
